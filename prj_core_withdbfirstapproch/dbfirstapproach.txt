@@ -1,0 +1,71 @@
+Scaffold-DbContext [-Connection] [-Provider] [-OutputDir] [-Context] [-Schemas>] [-Tables>] [-DataAnnotations] [-Force] [-Project] [-StartupProject] [<CommonParameters>]
+
+EXAMPLE -
+ PM> scaffold-dbcontext -Connection name=DBconnection Microsoft.EntityFrameworkCore.SqlServer -OutputDir  MyModels -Context Alokcontext -t Regions -DataAnnotations  -force
+
+
+
+{
+  "createdDate": "2024-03-06T11:08:41.529Z",
+  "id": 0,
+  "firstName": "alok",
+  "lastName": "kumar",
+  "mobile": "959296699",
+  "email": "alopk@gmail.com",
+  "customerAddresses": [
+    {
+      "id": 0,
+      "custId": 0,
+      "houseNo": "B5-11",
+      "streetNo": "12",
+      "area": "SECTOR 31",
+      "pincode": "201301",
+      "city": "NOIDA",
+      "country": "INDIA"
+    
+    }
+  ],
+  "customerBanks": [
+    {
+      "id": 0,
+      "custId": 0,
+      "bankName": "PNB",
+      "accountNo": "112233665",
+      "ifscCode": "PNB00023",
+      "upi": "ALOK@PNB",
+      "imps": "YES"
+     
+    }
+  ]
+}
+
+--------------------------------------------------------------------------------
+
+{
+    "mobile": "77777777",
+    "email": "777@gmail.com",
+    "customerAddresses": [
+      {
+        "id": 1,
+        "custId": 1,
+        "houseNo": "B00255-11"
+      }
+    ],
+    "customerBanks": [
+      {
+        "id": 1,
+        "custId": 1,
+        "accountNo": "5556662"
+      }
+    ],
+    "id": 1
+  }
+
+
+ //  var existingItem = existingCollection.Cast<object>().Where(x => x.GetType().GetProperty(propertyName)?.GetValue(x, null)?.Equals(property.GetValue(item)) ?? false).First();
+
+
+
+
+
+
